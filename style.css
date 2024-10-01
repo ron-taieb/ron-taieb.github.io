@@ -1,0 +1,9 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-image: url('background.png'); /* Add the path to the image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+}
