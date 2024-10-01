@@ -1,9 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'David Libre', sans-serif;
   line-height: 1.6;
-  background-image: url('background.png'); /* Add the path to the image here */
+  background-image: url('background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #333;
+  color: white;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.section-box {
+  background-color: rgba(51, 51, 51, 0.8);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.project img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project a {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 0.9rem;
 }
