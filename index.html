@@ -1,173 +1,129 @@
-<!-- index.html -->
-
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ron Taieb - Ph.D. student in Data Science, statistical machine learning, generative modeling, time-series dynamics, and applied AI.">
   <title>Ron Taieb</title>
-  <meta name="description" content="Ron Taieb - Ph.D. student in Data Science working on probabilistic machine learning, generative modeling, and statistical learning." />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo">Ron Taieb</a>
-
-```
-  <nav>
-    <a href="#about">About</a>
-    <a href="#publications">Publications</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</div>
-```
-
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
+    <section id="home" class="hero section">
+      <div class="hero-photo">
+        <img src="photo_of_me.jpg" alt="Ron Taieb">
+        <h1><strong>Ron</strong> Taieb</h1>
+      </div>
 
-```
-<section class="hero">
-  <div class="hero-image">
-    <img src="photo_of_me.jpg" alt="Ron Taieb">
-  </div>
+      <div class="hero-text">
+        <p>
+          I am a Ph.D. student in Data Science at Tel Aviv University, working on probabilistic generative modeling,
+          statistical machine learning, and time-series dynamics. My work is centered on building statistically grounded
+          machine learning methods for structured data, with an emphasis on generative models, state-space representations,
+          graphical models, and signal processing.
+        </p>
 
-  <div class="hero-text">
-    <h1>Ron Taieb</h1>
+        <p>
+          Alongside my academic work, I have industry and research experience in statistical modeling, forecasting systems,
+          applied AI, document understanding, retrieval-augmented generation, and data infrastructure. I am especially interested
+          in the intersection between rigorous statistical modeling and practical machine learning systems.
+        </p>
 
-    <h2>
-      Ph.D. Student in Data Science<br>
-      Statistical Machine Learning & Generative Modeling
-    </h2>
+        <div class="links">
+          <a href="mailto:rontaieb@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/ron-taieb-7991231bb/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/ron-taieb" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://ron-taieb.github.io/" target="_blank" rel="noopener">Website</a>
+        </div>
+      </div>
+    </section>
 
-    <p>
-      I work on probabilistic machine learning, generative modeling,
-      graphical models, time-series dynamics, and statistical learning.
-      My research combines statistical methodology with modern machine
-      learning systems, with interests spanning generative models,
-      representation learning, signal processing, and symbolic music analysis.
-    </p>
+    <section id="publications" class="section content-section">
+      <h2>Publications</h2>
 
-    <div class="links">
-      <a href="https://github.com/ron-taieb" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/ron-taieb-7991231bb/" target="_blank">LinkedIn</a>
-      <a href="https://scholar.google.com/" target="_blank">Scholar</a>
-    </div>
-  </div>
-</section>
+      <ol class="paper-list">
+        <li>
+          <span class="paper-title">Probabilistic Multilabel Graphical Modelling of Motif Transformations in Symbolic Music</span>.<br>
+          Ron Taieb, Yoel Greenberg, Barak Sober.<br>
+          <em>arXiv preprint arXiv:2603.26478, 2026.</em><br>
+          [<a href="https://arxiv.org/abs/2603.26478" target="_blank" rel="noopener">arXiv</a>]
+        </li>
+      </ol>
+    </section>
 
-<section id="about" class="section">
-  <h3>About</h3>
+    <section id="projects" class="section content-section">
+      <h2>Projects</h2>
 
-  <p>
-    I am currently pursuing a Ph.D. in Data Science at Tel Aviv University.
-    My work focuses on statistical machine learning and probabilistic
-    generative modeling, with emphasis on structured dynamical systems,
-    conditional generative models, and graphical approaches for complex data.
-  </p>
+      <div class="project-item">
+        <h3>Beethoven Motif Transformations CRF</h3>
+        <p>
+          Probabilistic modeling of musical motif transformations in symbolic music using multilabel graphical models and
+          conditional random fields. The project combines statistical modeling, symbolic music analysis, and interpretable
+          structure learning.
+        </p>
+        <p>[<a href="https://github.com/ron-taieb/beethoven-motif-transformations-crf" target="_blank" rel="noopener">GitHub</a>]</p>
+      </div>
 
-  <p>
-    Alongside research, I have industry experience in statistical modeling,
-    data science, and machine learning systems.
-  </p>
-</section>
+      <div class="project-item">
+        <h3>Diffusion Models with Alternative Noising Distributions and Schedules</h3>
+        <p>
+          A generative modeling project studying how alternative noising processes and scheduling choices affect diffusion-based
+          learning and sampling behavior.
+        </p>
+        <p>[<a href="https://github.com/ron-taieb/SchedNoise-Diffusion" target="_blank" rel="noopener">GitHub</a>]</p>
+      </div>
 
-<section id="publications" class="section">
-  <h3>Publications</h3>
+      <div class="project-item">
+        <h3>Goodreads Fantasy Subgenre Classification</h3>
+        <p>
+          NLP and topic-modeling pipeline for classifying fantasy subgenres from large-scale book review data, combining language
+          representation methods with interpretable unsupervised modeling.
+        </p>
+        <p>[<a href="https://github.com/ron-taieb/Goodreads-Fantasy-Subgenre-Classification" target="_blank" rel="noopener">GitHub</a>]</p>
+      </div>
 
-  <div class="publication">
-    <p class="pub-title">
-      Probabilistic Multilabel Graphical Modelling of Motif Transformations in Symbolic Music
-    </p>
+      <div class="project-item">
+        <h3>Robust K-Centroids Clustering</h3>
+        <p>
+          Comparative implementation and evaluation of K-centroids clustering algorithms, focusing on robustness, optimization,
+          and empirical behavior across clustering settings.
+        </p>
+        <p>[<a href="https://github.com/ron-taieb/Robust-KCentroids-Clustering" target="_blank" rel="noopener">GitHub</a>]</p>
+      </div>
+    </section>
 
-    <p class="pub-authors">
-      Ron Taieb, Yoel Greenberg, Barak Sober
-    </p>
+    <section id="experience" class="section content-section">
+      <h2>Experience</h2>
 
-    <p class="pub-links">
-      <a href="https://arxiv.org/abs/2603.26478" target="_blank">arXiv</a>
-    </p>
-  </div>
-</section>
+      <div class="compact-list">
+        <p><strong>Ph.D. in Data Science</strong>, Tel Aviv University. Research focus: probabilistic generative modeling, statistical machine learning, and time-series dynamics.</p>
+        <p><strong>Research Assistant, Bank of Israel, Research Division</strong>. Time-series forecasting, statistical modeling, and research-oriented data infrastructure.</p>
+        <p><strong>Data Scientist / AI Engineering, Stealth Startup</strong>. Document parsing, OCR, RAG systems, LLM-based summarization, metadata enrichment, and contextual question answering.</p>
+        <p><strong>M.Sc. in Statistics with Honors</strong>, The Hebrew University of Jerusalem. Thesis on probabilistic multilabel graphical modeling of musical motif transformations.</p>
+      </div>
+    </section>
 
-<section id="projects" class="section">
-  <h3>Selected Projects</h3>
-
-  <div class="project">
-    <a href="https://github.com/ron-taieb/beethoven-motif-transformations-crf" target="_blank">
-      Beethoven Motif Transformations CRF
-    </a>
-
-    <p>
-      Probabilistic graphical modeling framework for motif transformations
-      in symbolic music using multilabel CRFs and transformation families.
-    </p>
-  </div>
-
-  <div class="project">
-    <a href="https://github.com/ron-taieb/SchedNoise-Diffusion" target="_blank">
-      Diffusion Models with Alternative Noising Distributions
-    </a>
-
-    <p>
-      Research-oriented implementation exploring non-standard diffusion
-      processes and alternative noising schedules.
-    </p>
-  </div>
-
-  <div class="project">
-    <a href="https://github.com/ron-taieb/Goodreads-Fantasy-Subgenre-Classification" target="_blank">
-      Goodreads Fantasy Subgenre Classification
-    </a>
-
-    <p>
-      NLP and topic modeling framework for large-scale literary genre
-      and subgenre classification.
-    </p>
-  </div>
-</section>
-
-<section id="experience" class="section">
-  <h3>Experience</h3>
-
-  <div class="experience-item">
-    <p class="exp-title">
-      Bank of Israel — Research Division
-    </p>
-
-    <p>
-      Statistical modeling, forecasting systems, and data science workflows.
-    </p>
-  </div>
-
-  <div class="experience-item">
-    <p class="exp-title">
-      Research & Applied ML
-    </p>
-
-    <p>
-      Work spanning probabilistic ML, graphical models,
-      generative modeling, and applied AI systems.
-    </p>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <h3>Contact</h3>
-
-  <p>
-    ron.taieb@mail.tau.ac.il
-  </p>
-</section>
-```
-
+    <section id="contact" class="section content-section">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:rontaieb@gmail.com">rontaieb@gmail.com</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/ron-taieb-7991231bb/" target="_blank" rel="noopener">ron-taieb</a><br>
+        GitHub: <a href="https://github.com/ron-taieb" target="_blank" rel="noopener">ron-taieb</a>
+      </p>
+    </section>
   </main>
-
 </body>
 </html>
