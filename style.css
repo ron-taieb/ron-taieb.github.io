@@ -172,7 +172,8 @@ h1 {
   color: var(--muted);
 }
 
-.grid {
+.grid,
+.experience-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -239,7 +240,8 @@ h1 {
     font-size: 20px;
   }
 
-  .grid {
+  .grid,
+  .experience-list {
     grid-template-columns: 1fr;
   }
 }
