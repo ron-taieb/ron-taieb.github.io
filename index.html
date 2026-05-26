@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Ron Taieb</title>
-
   <meta name="description" content="Ron Taieb - Ph.D. student in Data Science working on statistical machine learning, probabilistic generative modeling, and applied AI.">
 
   <!-- Social sharing preview -->
@@ -34,7 +33,7 @@
       <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
-
+      <a href="#contact">Contact</a>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode">
         Dark
       </button>
@@ -183,26 +182,31 @@
   </div>
 </section>
 
+<section id="contact" class="section">
+  <h2>Contact</h2>
+
+  <p>
+    <a href="mailto:rontaieb@gmail.com">rontaieb@gmail.com</a>
+  </p>
+</section>
+
 </main>
 
 <script>
-  const htmlElement = document.documentElement;
+  const html = document.documentElement;
   const toggle = document.getElementById("themeToggle");
 
   const savedTheme = localStorage.getItem("theme");
-
   if (savedTheme) {
-    htmlElement.setAttribute("data-theme", savedTheme);
+    html.setAttribute("data-theme", savedTheme);
     toggle.textContent = savedTheme === "dark" ? "Light" : "Dark";
   }
 
   toggle.addEventListener("click", () => {
-    const current = htmlElement.getAttribute("data-theme");
+    const current = html.getAttribute("data-theme");
     const next = current === "dark" ? "light" : "dark";
-
-    htmlElement.setAttribute("data-theme", next);
+    html.setAttribute("data-theme", next);
     localStorage.setItem("theme", next);
-
     toggle.textContent = next === "dark" ? "Light" : "Dark";
   });
 </script>
