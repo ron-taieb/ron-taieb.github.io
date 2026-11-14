@@ -1,26 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ron Taieb — Data Scientist at Phoenix Financial and PhD researcher at Tel Aviv University. Statistical machine learning, probabilistic modeling, and applied AI.">
-  <meta property="og:title" content="Ron Taieb | Data Scientist & PhD Researcher">
-  <meta property="og:description" content="Statistical machine learning, probabilistic modeling, and applied AI.">
+
+  <title>Ron Taieb | Data Scientist & PhD Researcher</title>
+
+  <meta name="description" content="Ron Taieb is a Data Scientist and PhD researcher working on statistical machine learning, probabilistic generative modeling, and applied AI.">
+
+  <meta property="og:title" content="Ron Taieb">
+  <meta property="og:description" content="Data Scientist and PhD researcher. Statistical machine learning, probabilistic modeling, and applied AI.">
   <meta property="og:image" content="https://ron-taieb.github.io/social-preview.jpg">
   <meta property="og:url" content="https://ron-taieb.github.io/">
   <meta property="og:type" content="website">
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ron Taieb | Data Scientist & PhD Researcher">
-  <meta name="twitter:description" content="Statistical machine learning, probabilistic modeling, and applied AI.">
+  <meta name="twitter:title" content="Ron Taieb">
+  <meta name="twitter:description" content="Data Scientist and PhD researcher working on statistical machine learning and applied AI.">
   <meta name="twitter:image" content="https://ron-taieb.github.io/social-preview.jpg">
-  <title>Ron Taieb | Data Scientist & PhD Researcher</title>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="site-additions.css">
+
+  <style>
+    /* Education and Beyond Work & Research */
+
+    .education-card,
+    .beyond-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .education-entry,
+    .beyond-entry {
+      padding: 16px 0;
+    }
+
+    .education-entry:first-child,
+    .beyond-entry:first-child {
+      padding-top: 0;
+    }
+
+    .education-entry:last-child,
+    .beyond-entry:last-child {
+      padding-bottom: 0;
+    }
+
+    .education-entry + .education-entry,
+    .beyond-entry + .beyond-entry {
+      border-top: 1px solid rgba(128, 128, 128, 0.18);
+    }
+
+    .education-entry h3,
+    .beyond-entry h3 {
+      margin: 0 0 6px;
+    }
+
+    .education-entry p,
+    .beyond-entry p {
+      margin: 4px 0;
+    }
+
+    .education-date {
+      opacity: 0.7;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
+
 <body>
+
 <header class="navbar">
   <div class="nav-container">
     <div class="logo">Ron Taieb</div>
+
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#research">Research</a>
@@ -28,18 +83,39 @@
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="Ron_Taieb_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">Dark</button>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+        Dark
+      </button>
     </nav>
   </div>
 </header>
+
 <main>
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-image"><img src="photo_of_me.jpg" alt="Portrait of Ron Taieb"></div>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="hero-image">
+      <img src="photo_of_me.jpg" alt="Ron Taieb">
+    </div>
+
     <div class="hero-text">
       <div class="tag">Data Scientist | PhD Researcher</div>
-      <h1 id="hero-title">Ron Taieb</h1>
-      <p class="lead">Statistical machine learning, probabilistic modeling, generative methods, and applied AI.</p>
-      <p>I work at the intersection of statistical methodology and modern machine learning, connecting rigorous modeling with practical AI systems.</p>
+
+      <h1>Ron Taieb</h1>
+
+      <p class="lead">
+        Statistical machine learning, probabilistic modeling,
+        generative learning, and applied AI.
+      </p>
+
+      <p>
+        I work at the intersection of statistical methodology and modern
+        machine learning, combining research-driven approaches with
+        practical AI systems.
+      </p>
+
       <div class="links">
         <a href="https://github.com/ron-taieb" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/ron-taieb-7991231bb/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -48,106 +124,313 @@
     </div>
   </section>
 
+
+  <!-- ABOUT -->
+
   <section id="about" class="section">
     <h2>About</h2>
-    <p>I am a Data Scientist at Phoenix Financial and a PhD researcher in Data Science at Tel Aviv University. I hold an MSc in Statistics and undergraduate degrees in Statistics &amp; Data Science and Economics from the Hebrew University of Jerusalem.</p>
-    <p>My industry experience includes predictive modeling, statistical analysis, forecasting, and AI-driven data processing. I work on translating complex data and business problems into statistical and machine learning solutions, alongside colleagues in data engineering and ML production.</p>
-    <p>My research explores how statistical structure and probabilistic representations can contribute to machine learning and generative modeling, bridging classical statistical inference and modern learning architectures.</p>
+
+    <p>
+      I am a Data Scientist at Phoenix Financial and a PhD researcher
+      in Data Science at Tel Aviv University. I hold an MSc in Statistics
+      and undergraduate degrees in Statistics &amp; Data Science and Economics
+      from the Hebrew University of Jerusalem.
+    </p>
+
+    <p>
+      My professional experience spans predictive modeling, statistical
+      analysis, forecasting, and applied AI systems. I work on translating
+      complex data and business problems into statistical and machine
+      learning solutions, including model development and integration
+      into production-oriented workflows.
+    </p>
+
+    <p>
+      My research explores how statistical structure and probabilistic
+      representations can improve machine learning and generative modeling.
+      I am particularly interested in connecting statistical inference
+      with modern learning architectures.
+    </p>
   </section>
+
+
+  <!-- RESEARCH AND PUBLICATIONS -->
 
   <section id="research" class="section">
     <h2>Research &amp; Publications</h2>
+
     <div class="card">
-      <h3>Probabilistic Multilabel Graphical Modelling of Motif Transformations in Symbolic Music</h3>
-      <div class="authors">Ron Taieb, Yoel Greenberg, Barak Sober</div>
-      <p>A probabilistic graphical modeling framework for studying motif transformations in symbolic music, using multilabel conditional random fields and statistical inference.</p>
-      <div class="resource-links">
-        <a class="button" href="https://arxiv.org/abs/2603.26478" target="_blank" rel="noopener noreferrer">arXiv</a>
-        <a class="button" href="https://github.com/ron-taieb/beethoven-motif-transformations-crf" target="_blank" rel="noopener noreferrer">Code</a>
+      <h3>
+        Probabilistic Multilabel Graphical Modelling of Motif
+        Transformations in Symbolic Music
+      </h3>
+
+      <div class="authors">
+        Ron Taieb, Yoel Greenberg, Barak Sober
       </div>
+
+      <p>
+        A probabilistic graphical modeling framework for studying
+        motif transformations in symbolic music, using multilabel
+        conditional random fields and statistical inference.
+      </p>
+
+      <a class="button"
+         href="https://arxiv.org/abs/2603.26478"
+         target="_blank"
+         rel="noopener noreferrer">
+        arXiv
+      </a>
+
+      <a class="button"
+         href="https://github.com/ron-taieb/beethoven-motif-transformations-crf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Code
+      </a>
     </div>
-    <div class="card ongoing-research">
-      <h3>Ongoing PhD Research — Statistical Representations for Generative Modeling</h3>
-      <p>Investigating how statistical representations can be integrated into probabilistic generative models to capture structure in complex data. Current work explores conditional flow matching, state-space methods, and learned statistical representations for time-series generation.</p>
+
+    <div class="card">
+      <h3>
+        Ongoing PhD Research — Statistical Representations
+        for Generative Modeling
+      </h3>
+
+      <p>
+        Investigating how statistical representations can be integrated
+        into probabilistic generative models to capture structure in
+        complex data. Current work explores conditional flow matching,
+        state-space methods, and learned statistical representations
+        for time-series generation.
+      </p>
     </div>
   </section>
+
+
+  <!-- PROJECTS -->
 
   <section id="projects" class="section">
     <h2>Projects</h2>
+
     <div class="grid">
+
       <div class="card">
-        <h3><a href="https://github.com/ron-taieb/beethoven-motif-transformations-crf" target="_blank" rel="noopener noreferrer">Beethoven Motif Transformations CRF</a></h3>
-        <p>Probabilistic graphical modeling of musical motif transformations using CRFs and interpretable transformation families.</p>
+        <h3>
+          <a href="https://github.com/ron-taieb/beethoven-motif-transformations-crf"
+             target="_blank"
+             rel="noopener noreferrer">
+            Beethoven Motif Transformations CRF
+          </a>
+        </h3>
+
+        <p>
+          Probabilistic graphical modeling framework for motif
+          transformations in symbolic music using CRFs and
+          interpretable transformation families.
+        </p>
       </div>
+
       <div class="card">
-        <h3><a href="https://github.com/ron-taieb/SchedNoise-Diffusion" target="_blank" rel="noopener noreferrer">Diffusion Models with Alternative Noising</a></h3>
-        <p>Research-oriented implementation exploring alternative diffusion noising processes and schedules.</p>
+        <h3>
+          <a href="https://github.com/ron-taieb/SchedNoise-Diffusion"
+             target="_blank"
+             rel="noopener noreferrer">
+            Diffusion Models with Alternative Noising
+          </a>
+        </h3>
+
+        <p>
+          Research-oriented implementation exploring alternative
+          diffusion noising processes and schedules.
+        </p>
       </div>
+
       <div class="card">
-        <h3><a href="https://github.com/ron-taieb/Goodreads-Fantasy-Subgenre-Classification" target="_blank" rel="noopener noreferrer">Goodreads Fantasy Subgenre Classification</a></h3>
-        <p>NLP and topic modeling for literary genre and subgenre classification.</p>
+        <h3>
+          <a href="https://github.com/ron-taieb/Goodreads-Fantasy-Subgenre-Classification"
+             target="_blank"
+             rel="noopener noreferrer">
+            Goodreads Fantasy Subgenre Classification
+          </a>
+        </h3>
+
+        <p>
+          NLP and topic modeling framework for literary genre
+          and subgenre classification.
+        </p>
       </div>
+
       <div class="card">
-        <h3><a href="https://github.com/ron-taieb/Robust-KCentroids-Clustering" target="_blank" rel="noopener noreferrer">Robust K-Centroids Clustering</a></h3>
-        <p>Comparative implementation of robust clustering methods.</p>
+        <h3>
+          <a href="https://github.com/ron-taieb/Robust-KCentroids-Clustering"
+             target="_blank"
+             rel="noopener noreferrer">
+            Robust K-Centroids Clustering
+          </a>
+        </h3>
+
+        <p>
+          Comparative implementation of robust clustering methods.
+        </p>
       </div>
+
     </div>
   </section>
 
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+
   <section id="experience" class="section">
-    <h2>Professional Experience</h2>
+    <h2>Experience</h2>
+
     <div class="experience-list">
+
       <div class="card">
         <h3>Data Scientist — Phoenix Financial</h3>
-        <p class="date-line">Aug 2026 – Present</p>
-        <p>Developing predictive machine learning solutions for insurance applications, combining statistical modeling, AI-assisted document processing, and collaboration on production ML workflows.</p>
+
+        <p>
+          Aug 2026 – Present
+        </p>
+
+        <p>
+          Developing predictive machine learning solutions for
+          insurance applications, combining statistical modeling,
+          AI-assisted document processing, and collaboration
+          on production ML workflows.
+        </p>
       </div>
+
       <div class="card">
         <h3>Research Assistant — Bank of Israel, Research Division</h3>
-        <p class="date-line">Aug 2022 – Aug 2026</p>
-        <p>Developed statistical and econometric models, forecasting systems, and analytical infrastructure in collaboration with economists, statisticians, and data scientists.</p>
+
+        <p>
+          Aug 2022 – Aug 2026
+        </p>
+
+        <p>
+          Developed statistical and econometric models, forecasting
+          systems, and analytical infrastructure in collaboration
+          with economists, statisticians, and data scientists.
+        </p>
       </div>
+
       <div class="card">
         <h3>Teaching Assistant — Hebrew University of Jerusalem</h3>
-        <p class="date-line">Oct 2023 – Oct 2025</p>
-        <p>Taught undergraduate statistics and probability for economics students, including statistical inference and applied methods using R.</p>
+
+        <p>
+          Oct 2023 – Oct 2025
+        </p>
+
+        <p>
+          Taught undergraduate statistics and probability for
+          economics students, including statistical inference
+          and applied statistical methods using R.
+        </p>
       </div>
+
     </div>
   </section>
+
+
+  <!-- EDUCATION -->
 
   <section id="education" class="section">
     <h2>Education</h2>
-    <div class="education-list">
-      <div class="education-item"><div><strong>PhD in Data Science</strong><span>Tel Aviv University</span></div><span class="date-line">Oct 2025 – Present</span></div>
-      <div class="education-item"><div><strong>MSc in Statistics, with Honors</strong><span>Hebrew University of Jerusalem</span></div><span class="date-line">Dec 2023 – Sep 2025</span></div>
-      <div class="education-item"><div><strong>BSc in Statistics &amp; Data Science; BA in Economics</strong><span>Hebrew University of Jerusalem</span></div><span class="date-line">Oct 2020 – Jul 2023</span></div>
+
+    <div class="card education-card">
+
+      <div class="education-entry">
+        <h3>PhD in Data Science</h3>
+        <p>Tel Aviv University</p>
+        <p class="education-date">Oct 2025 – Present</p>
+      </div>
+
+      <div class="education-entry">
+        <h3>MSc in Statistics, with Honors</h3>
+        <p>Hebrew University of Jerusalem</p>
+        <p class="education-date">Dec 2023 – Sep 2025</p>
+      </div>
+
+      <div class="education-entry">
+        <h3>BSc in Statistics &amp; Data Science; BA in Economics</h3>
+        <p>Hebrew University of Jerusalem</p>
+        <p class="education-date">Oct 2020 – Jul 2023</p>
+      </div>
+
     </div>
   </section>
 
-  <section id="additional" class="section">
+
+  <!-- BEYOND WORK AND RESEARCH -->
+
+  <section id="beyond" class="section">
     <h2>Beyond Work &amp; Research</h2>
-    <p><strong>Violin:</strong> Active soloist and orchestral musician, performing across Israel and internationally. Years of ensemble performance have developed attentive listening, analytical interpretation, and collaborative skills.</p>
-    <p><strong>Honors:</strong> Teaching Excellence (Hebrew University, 2025); Research Division Employee Excellence (Bank of Israel, 2024); Honorable Soldier (IDF Department of Culture, 2019).</p>
+
+    <div class="card beyond-card">
+
+      <div class="beyond-entry">
+        <h3>Violin Performance</h3>
+
+        <p>
+          Active soloist and orchestral musician, performing across
+          Israel and internationally. Years of ensemble performance
+          have developed attentive listening, analytical interpretation,
+          and collaborative skills.
+        </p>
+      </div>
+
+      <div class="beyond-entry">
+        <h3>Honors &amp; Awards</h3>
+
+        <p>
+          Teaching Excellence (Hebrew University, 2025);
+          Research Division Employee Excellence (Bank of Israel, 2024);
+          Honorable Soldier (IDF Department of Culture, 2019).
+        </p>
+      </div>
+
+    </div>
   </section>
+
 </main>
+
+
+<!-- THEME TOGGLE -->
+
 <script>
   const htmlElement = document.documentElement;
-  const toggle = document.getElementById('themeToggle');
-  const storedTheme = (() => { try { return localStorage.getItem('theme'); } catch { return null; } })();
-  const initialTheme = storedTheme === 'dark' ? 'dark' : 'light';
-  htmlElement.setAttribute('data-theme', initialTheme);
-  function updateToggle(theme) {
-    const dark = theme === 'dark';
-    toggle.textContent = dark ? 'Light' : 'Dark';
-    toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  const toggle = document.getElementById("themeToggle");
+
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark" || savedTheme === "light") {
+    htmlElement.setAttribute("data-theme", savedTheme);
   }
-  updateToggle(initialTheme);
-  toggle.addEventListener('click', () => {
-    const next = htmlElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    htmlElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('theme', next); } catch { /* Theme still changes for this visit. */ }
-    updateToggle(next);
+
+  function updateThemeButton() {
+    const currentTheme = htmlElement.getAttribute("data-theme");
+
+    toggle.textContent = currentTheme === "dark" ? "Light" : "Dark";
+    toggle.setAttribute(
+      "aria-label",
+      currentTheme === "dark"
+        ? "Switch to light mode"
+        : "Switch to dark mode"
+    );
+  }
+
+  updateThemeButton();
+
+  toggle.addEventListener("click", () => {
+    const current = htmlElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+
+    htmlElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+
+    updateThemeButton();
   });
 </script>
+
 </body>
 </html>
